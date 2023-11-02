@@ -1,5 +1,6 @@
 from pico2d import *
 import game_framework
+from bird import Bird
 
 import game_world
 from grass import Grass
@@ -29,6 +30,11 @@ def init():
     boy = Boy()
     game_world.add_object(boy, 1)
 
+    birds = []
+    for _ in range(10):
+        bird = Bird
+        birds.append(bird)
+        game_world.add_object(bird, 1)
 
 def finish():
     game_world.clear()
@@ -37,7 +43,7 @@ def finish():
 
 def update():
     game_world.update()
-    # delay(0.3)    # 듬성듬성 떨어져서 감, 렉걸림 - 성능이 안 좋은 pc가 맞추려고 
+    # delay(0.3)    # 듬성듬성 떨어져서 감, 렉걸림 - 성능이 안 좋은 pc가 맞추려고
 
 
 def draw():
