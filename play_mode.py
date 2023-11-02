@@ -37,7 +37,7 @@ def finish():
 
 def update():
     game_world.update()
-    # delay(0.1)
+    # delay(0.3)    # 듬성듬성 떨어져서 감, 렉걸림 - 성능이 안 좋은 pc가 맞추려고 
 
 
 def draw():
